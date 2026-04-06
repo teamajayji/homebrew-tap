@@ -8,6 +8,8 @@ cask "ajayji" do
   homepage "https://ajayji.com/"
 
   app "ajayji.app"
+  # Add this line to expose the bundled CLI to the terminal
+  binary "ajayji.app/Contents/MacOS/ajayji-cli", target: "ajayji"
 
   zap trash: [
     "~/Library/Application Support/com.ajayji.ajayji",
